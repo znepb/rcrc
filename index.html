@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Roller Coaster Rating Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Roller Coaster Rating Calculator</h1>
+        <h3>Rating</h3>
+        <span>Layout (<span id="rating-layout">5</span>)</span> <br/>
+        <input type="range" min="0" max="10" value="5" class="slider" id="rate-layout"> <br/>
+
+        <span>Intensity (<span id="rating-intensity">5</span>)</span> <br/>
+        <input type="range" min="0" max="10" value="5" class="slider" id="rate-intensity"> <br/>
+
+        <span>Appearance (<span id="rating-appearance">5</span>)</span> <br/>
+        <input type="range" min="0" max="10" value="5" class="slider" id="rate-appearance"> <br/>
+
+        <span>Theming (<span id="rating-theming">5</span>)</span> <br/>
+        <input type="range" min="0" max="10" value="5" class="slider" id="rate-theming"> <br/>
+        
+        <h3><span class="weightInvalid" style="display: none;" id="weight-invalid" title="Weight is invalid! Please make sure all weights add up to eight">!</span> Weight</h3>
+        <span>Layout (<span id="weighting-layout">2</span>)</span> <br/>
+        <input type="range" min="0" max="8" value="2" class="slider" id="weight-layout"> <br/>
+
+        <span>Intensity (<span id="weighting-intensity">2</span>)</span> <br/>
+        <input type="range" min="0" max="8" value="2" class="slider" id="weight-intensity"> <br/>
+
+        <span>Appearance (<span id="weighting-appearance">2</span>)</span> <br/>
+        <input type="range" min="0" max="8" value="2" class="slider" id="weight-appearance"> <br/>
+
+        <span>Theming (<span id="weighting-theming">2</span>)</span> <br/>
+        <input type="range" min="0" max="8" value="2" class="slider" id="weight-theming">
+
+        <h2>Final Rating: 
+            <span style="font-weight: normal;" id="output"></span>
+        </h2>
+    </body>
+</html>
